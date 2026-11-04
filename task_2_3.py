@@ -15,7 +15,7 @@ while True:
         break
     except ValueError:
         print('გთხოვთ შეიყვანოთ მხოლოდ ნატურალური რიცხვები!')
-if (year%400==0 or year%4==0) and year%100!=0:
+if year%400==0 or (year%4==0 and year%100!=0):
   print ('წელი ნაკიანია')
 else:
   print ('წელი არ არის ნაკიანი')
